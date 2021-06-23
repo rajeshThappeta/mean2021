@@ -7,5 +7,6 @@ app.use(exp.static(path.join(__dirname, './dist/MEAN-Latest/')))
 
 
 
+const port=process.env.PORT||8080
 
-app.listen(3000, () => { console.log("server on port 3000") })
+app.listen(port, () => { console.log(`server on ${port}`) })
